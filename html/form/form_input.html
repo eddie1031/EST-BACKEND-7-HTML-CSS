@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 태그와 인풋 태그</title>
+</head>
+<body>
+
+  <form>
+
+    <div>
+      <label for="name">이름 : </label>
+      <input id="name" name="name" type="text" placeholder="이름을 입력해주세요!">
+    </div>
+    
+    <div>
+      <label for="email">이메일 :</label>
+      <input name="email" type="email" id="email">
+    </div>
+    
+    <div>
+      <label for="password">비밀번호 : </label>
+      <input type="password" name="password" id="password">
+    </div>
+    
+    <div>
+      <label for="date">날짜 : </label>
+      <input type="date" id="date">
+    </div>
+
+    <div>
+      <label for="time">시간 : </label>
+      <input type="time" id="time">
+    </div>
+
+    <div>
+      <label for="datetime-local">날짜와 시간 : </label>
+      <input type="datetime-local" id="datetime-local">  
+    </div>
+
+    <div>
+      <label for="number">숫자 : </label>
+      <input type="number" id="number">
+    </div>
+
+    <div>
+      <label for="color">색상 : </label>
+      <input type="color" id="color">
+    </div>
+
+    <div>
+      <label for="agree">약관에 동의합니다.</label>
+      <input type="checkbox" id="agree">
+    </div>
+    
+    <div>
+      <label for="option1">option1</label>
+      <input type="radio" id="option1" name="option" value="1">
+      <label for="option2">option2</label>
+      <input type="radio" id="option2" name="option" value="2">
+      <label for="option3">option3</label>
+      <input type="radio" id="option3" name="option" value="3">
+    </div>
+
+    <input type="hidden" name="hidden" value="SuperSecret">
+
+  </form>
+</body>
+</html>

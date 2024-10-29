@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>폼 태그와 셀렉트 태그</title>
+</head>
+<body>
+
+  <div>
+    <form>
+        <label for="size">사이즈를 선택해주세요.</label>
+        <br>
+        <select name=sizes"" id="size" size="2">
+            <option value="xs">xs</option>
+            <option value="s">s</option>
+            <option value="m" selected>m</option>
+            <option value="l">l</option>
+            <option value="xl" disabled>xl</option>
+            <option value="2xl">2xl</option>
+        </select>
+    </form>
+
+  </div>
+
+  <div>
+    <form action="">
+        <label for="hobbies">해당사항 모두 선택</label>
+        <br>
+        <select name="hobby" id="hobbies" multiple size="5" required>
+            <option value="game">게임</option>
+            <option value="exercise">운동</option>
+            <option value="climbing">등산</option>
+            <option value="cooking">요리</option>
+            <option value="travel">여행</option>
+            <option value="reading">독서</option>
+            <option value="listening">음악감상</option>
+            <option value="coding">코딩</option>
+        </select>
+        <br>
+        <button>제출</button>
+    </form>
+  </div>
+
+  <div>
+    <form>
+    
+        <label for="shopping">구매할 상품을 선택하세요.</label>
+        <br>
+    
+        <select name="products" id="shopping">
+            <optgroup label="Electronic" >
+                <option value="laptop">노트북</option>
+                <option value="smartphone">스마트폰</option>
+                <option value="headphones">헤드폰</option>
+            </optgroup>
+            <optgroup label="clothes" >
+                <option value="tshirt">티셔츠</option>
+                <option value="jeans">청바지</option>
+                <option value="jacket">자켓</option>
+            </optgroup>
+            <optgroup label="snack" >
+                <option value="chips">감자칩</option>
+                <option value="chocolate">초콜릿</option>
+            </optgroup>
+        </select>
+    
+        <br>
+        <button>제출</button>
+    
+    </form>
+  </div>
+
+  <div>
+    <form>
+      <label for="car">자동차 브랜드:</label><br>
+      <input type="text" id="car"  list="car-brands" placeholder="브랜드를 입력하세요" required>
+
+      <datalist id="car-brands">
+          <option value="Hyundai">
+          <option value="Kia">
+          <option value="BMW">
+          <option value="Mercedes-Benz">
+          <option value="Tesla">
+          <option value="Toyota">
+      </datalist>
+
+      <br><br>
+      <button>제출</button>
+    </form>
+  </div>
+
+</body>
+</html>
