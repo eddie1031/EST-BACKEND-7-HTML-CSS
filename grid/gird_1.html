@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./grid_global.css">
+  <title>Grid Test 1</title>
+  <style>
+
+    .container {
+      display: grid;
+
+      /* 
+      grid의 행과 열을 설정하는 방법
+
+      grid-template-columns : 열의 크기를 설정
+      grid-template-rows : 행의 크기를 설정
+
+       */
+
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-columns: repeat(3, 155px); */
+      
+      /* grid-template-rows: auto auto auto; */
+      grid-template-rows: repeat(3, auto);
+
+      /* 
+      gap
+      그리드 셀 간의 간격
+
+      row-gap: 행간 간격
+      column-gap: 열간 간격
+      gap: 행열간격
+       */
+
+      /* row-gap: 5px;
+      column-gap: 5px; */
+      gap: 5px;
+
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div id="item_1" class="box"></div>
+      <div id="item_2" class="box"></div>
+      <div id="item_3" class="box"></div>
+      <div id="item_4" class="box"></div>
+      <div id="item_5" class="box"></div>
+      <div id="item_6" class="box"></div>
+      <div id="item_7" class="box"></div>
+      <div id="item_8" class="box"></div>
+      <div id="item_9" class="box"></div>
+    </div>
+</body>
+</html>
