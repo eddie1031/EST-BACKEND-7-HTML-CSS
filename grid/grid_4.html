@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Test 4</title>
+  <style>
+
+    .container {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-rows: repeat(3, 200px); */
+      grid-auto-rows: 200px;
+      
+      gap: 10px;
+      
+      /* 
+      grid-template-areas
+      그리드의 레이아웃을 이름을 붙인 영역(area)으로 구분하고,
+      그 이름을 이용해서 셀을 배치하는 방식
+
+      각 영역은 따옴표("")안에 배치됩니다.
+      같은 이름을 여러번 반복해서 여러 셀을 하나의 영역으로 묶을 수 있습니다.
+      . 비어있는 셀을 의미합니다.
+       */
+
+      grid-template-areas: 
+        " tea1 tea1 tea1 "
+        " tree tree tea2 "
+        " tree tree tea2 "
+        " tea3 tea3 tea4 "
+        " tea5 tea5 tea4 "
+      ;
+    }
+
+    .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .tree {
+      grid-area: tree;
+    }
+
+    .tea1 {
+      grid-area: tea1;
+    }
+
+    .tea2 {
+      grid-area: tea2;
+    }
+
+    .tea3 {
+      grid-area: tea3;
+    }
+
+    .tea4 {
+      grid-area: tea4;
+    }
+    
+    .tea5 {
+      grid-area: tea5;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="img tea1" src="https://images.unsplash.com/photo-1518676527964-e006f33f3667?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+    <img class="img tea2" src="https://images.unsplash.com/photo-1701754200582-7ae97562a043?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+    <img class="img tree" src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+    <img class="img tea3" src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+    <img class="img tea4" src="https://images.unsplash.com/photo-1523539693385-e5e891eb4465?q=80&w=2287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+    <img class="img tea5" src="https://plus.unsplash.com/premium_photo-1674019234994-eceabbdd091d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+    <img class="img" src="https://plus.unsplash.com/premium_photo-1674019235858-abdd3ef86a3c?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+    <img class="img" src="https://plus.unsplash.com/premium_photo-1674019235252-407560edcc9b?q=80&w=2465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+    <img class="img" src="https://images.unsplash.com/photo-1695150601855-f545034a070a?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+</div>
+</body>
+</html>
