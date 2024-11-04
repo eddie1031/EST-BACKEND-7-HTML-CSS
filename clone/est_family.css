@@ -1,0 +1,585 @@
+/*
+초기화 시작
+ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+ol {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+초기화 끝
+ */
+
+/*
+범용 시작
+ */
+hr {
+    background-color: rgb(235, 235, 235);
+    height: 1px;
+    border: 0;
+}
+
+/* 범용 : 위치 */
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+/* 범용 : 레이아웃 */
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.grid {
+    display: grid;
+}
+
+.block {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* 범용 : 크기 */
+.h-8 {
+    height: 2rem;
+}
+
+.h-14 {
+    height: 3.5rem;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.h-96 {
+    height: 400px;
+}
+
+/* 범용 : 간격 */
+.w-full {
+    width: 100%;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+/* 범용 : 마진 */
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.my-custom {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.my-custom-2 {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.my-custom-3 {
+    margin-top: 112px;
+    margin-bottom: 112px;
+}
+
+.my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-5 {
+    margin-top: 1.25rem;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+.mt-custom-2 {
+    margin-top: 48px;
+}
+
+
+.pt-10 {
+    padding-top: 2.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.75rem;
+}
+
+/* 범용 : 패딩 */
+.p-1 {
+    padding: 0.25rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+
+.m-1 {
+    margin: 0.25rem;
+}
+
+.m-2 {
+    margin: 0.5rem;
+}
+
+.m-3 {
+    margin: 0.75rem;
+}
+
+.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+/* 범용 : 플렉스 */
+.flex {
+    display: flex;
+}
+
+.flex-shrink {
+    flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+/* 범용 : 그리드 */
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* 범용 : 글자 정렬 */
+.text-center {
+    text-align: center;
+}
+
+/* 범용 : 글자 굵기 */
+.font-normal {
+    font-weight: 400;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: bold; /* font-weight: 700 */
+}
+
+/* 범용 : 글자크기 */
+.text-xs {
+    font-size: 12px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-base {
+    font-size: 16px;
+}
+
+.text-lg {
+    font-size: 19px;
+}
+
+.text-xl {
+    font-size: 20px;
+}
+
+.text-2xl {
+    font-size: 23px;
+}
+
+.text-4xl {
+    font-size: 38px;
+    /*line-height: 2.5rem;*/
+}
+
+.text-5xl {
+    font-size: 52px;
+    /*line-height: 1rem;*/
+}
+
+/* 범용 : 글자 색상*/
+.text-white {
+    color: white;
+}
+
+.text-gray {
+    color: rgb(118, 118, 118);
+}
+
+.text-gray-50 {
+    color: rgb(140, 140, 140);
+}
+
+.text-gray-100 {
+    color: rgb(191, 191, 191);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* 범용 : 버튼 */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-rounded {
+    border-radius: 1.5rem;
+}
+
+/* 범용 : 배경색 */
+.bg-black {
+    background-color: rgb(34, 34, 34);
+}
+.bg-gray-100 {
+    background-color: rgb(250,250,250);
+}
+
+.bg-yellow {
+    background-color: rgb(243, 214, 29);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+/* 범용 : 이미지 */
+.object-cover {
+    object-fit: cover;
+}
+
+/* 범용 : 카드 */
+.black-card {
+    background-color: rgb(34, 34, 34);
+    border-radius: 0.5rem;
+    padding: 25px;
+}
+
+.gray-card {
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.5rem;
+    padding: 30px;
+}
+
+.gray-card-sm {
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.5rem;
+    padding: 24px;
+}
+
+.card-title {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.card-body {
+    line-height: 24px;
+}
+
+.rounded-sm {
+    border-radius: 0.25rem;
+}
+
+.rounded-md {
+    border-radius: 0.5rem;
+}
+
+/*
+범용 끝
+ */
+
+/*
+네비게이션 바 시작
+ */
+#logo {
+    width: 32px;
+    height: 32px;
+}
+
+.logo-con {
+    gap: 12px;
+}
+/*
+네비게이션 바 끝
+ */
+
+/*
+오프닝 1 시작
+*/
+.img-cover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ad-text-con {
+    padding-top: 32px;
+    padding-bottom: 62px;
+}
+
+.ad-text-con-2 {
+    margin-top: 16px;
+}
+/*
+오프닝 1 끝
+*/
+
+/*
+모집중 시작
+*/
+.recruit-con {
+    margin-top: 40px;
+}
+/*
+모집중 끝
+*/
+
+/*
+모집과정 컨테이너 시작
+*/
+.course {
+    width: 80%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.course-header, .course-btn-con {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*
+모집과정 컨테이너 끝
+*/
+
+/*
+안내 2 시작
+*/
+.intro-2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+/*
+안내 2 끝
+*/
+
+/*
+안내 3 시작
+*/
+.intro-3 {
+    background-color: rgb(221, 233, 243);
+}
+
+.intro-title {
+    margin-top: 56px;
+}
+
+.intro-title-2 {
+    margin-top: 40px;
+}
+
+.intro-title-3 {
+    margin-top: 24px;
+}
+/*
+안내 3 끝
+*/
+
+/*
+리뷰 컨테이너 시작
+ */
+
+.img-con {
+    width: 195px;
+    height: 195px;
+}
+
+.appendix-btn {
+    width: 309px;
+    height: 171px;
+}
+
+/*
+리뷰 컨테이너 끝
+ */
+
+/*
+푸터 시작
+ */
+.footer-con {
+    padding-top: 28px;
+    padding-bottom: 60px;
+}
+/*
+푸터 끝
+ */
+
